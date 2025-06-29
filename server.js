@@ -47,7 +47,7 @@ const httpServer = createHttpServer(app);
 const wsServer = new WebSocketServer({ server: httpServer, path: '/graphql' });
 useWsServer({ schema, context: getWsContext }, wsServer);
 
-httpServer.listen({ port: PORT }, () => {
+httpServer.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-  console.log(`GraphQL endpoint: http://localhost:${PORT}/graphql`);
+  // console.log(`GraphQL endpoint: http://localhost:${PORT}/graphql`);
 });
