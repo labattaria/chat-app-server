@@ -4,6 +4,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "build": "npm install",
     "start": "nodemon server.js"
   },
   "dependencies": {
